@@ -1,0 +1,300 @@
+/* reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Colors vars */
+:root {
+    --main-bg-color: #ffa7b6;
+    /* F6BDC4 |  */
+    --main-text-color: whitesmoke;
+  }
+
+
+/* Nav */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: var(--main-bg-color);
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Amiri', sans-serif;
+}
+
+.logo{
+    color: var(--main-text-color);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 22px;
+
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 30%
+}
+
+/* .nav-links li{
+    list-style: none;
+} */
+
+li{
+    list-style: none;
+}
+.nav-links a{
+    color:var(--main-text-color);
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.bar{
+    display: none;
+    cursor: pointer;
+}
+
+.bar .fas{
+    color:var(--main-text-color);
+    margin: 5px;
+}
+
+/* Responsive Nav */
+@media screen and (max-width:980px){
+    .nav-links{
+        width: 40%
+    }
+}
+
+@media screen and (max-width:768px){
+    nav{
+        justify-content: space-between;
+    }
+    nav h4{
+padding-left: 90%;
+    }
+
+    body{
+        overflow-x: hidden; 
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 100vh;
+        top: 8vh;
+        background-color: var(--main-bg-color);
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .bar{
+        display: block;
+        padding-right: 5%;
+    }
+}
+
+.nav-active{
+    transform: translateX(0%)
+}
+/* main */
+
+#about-me{
+    height: 100vh;
+    background-image: url('./imgs/bg1.jpg');
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.skills{
+display: flex;
+padding: 10px;
+
+}
+
+.skills div{
+    background-color: #7272721e;
+    padding:30px;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+#projects{
+    height: 100vh;
+  background-color: whitesmoke;
+}
+#contact{
+    height: 100vh;
+    background-image: url('./imgs/bg3.jpg');
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#contact h2{
+    margin: 30px 0;
+}
+
+#contact li{
+    list-style: none;
+    font-size: 4rem;
+    padding: 0 30px;;
+}
+
+#contact li a{
+   color: black;
+}
+
+.social{
+    background-color: rgba(255, 255, 255, 0.315);
+    padding: 8vw;
+    border-radius: 8px;
+    /* margin: auto */
+}
+.social-links{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+/* scroll */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+    width: 100%;
+    height: 100vh;
+ 
+    /* Scroll Snap */
+    /* scroll-snap-align: center; */
+  }
+
+/* Footer CSS to stick to the buttom */
+#page-container {
+    position: relative;
+    min-height: 100vh;
+    /* scroll */
+    scroll-snap-type: y mandatory;
+    width: 100%;
+    /* height: 100%; */
+}
+
+main {
+    padding-bottom: 2.5rem;    
+}
+
+footer{
+    text-align: center;
+    color:#000;
+    background-color: white ;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem; 
+    padding-top: 10px;
+}
+
+footer a{
+  color: var(--main-bg-color) ;
+  text-decoration: none;
+}
+
+/* Projects Cards */
+#projects{
+    /* max-width: 1000px; */
+    margin: auto;
+    padding: 30px;
+}
+.row {
+    margin: 8px -16px;
+  }
+
+  /* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+  #projects{
+    height: 100%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+  #about-me{
+    height: 100%;
+    padding: 3%;
+  }
+  .skills{
+    
+    flex-direction: column;
+  }
+}
+
+/* Buttons */
+.button {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.8rem;
+    margin: 15px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .button1 {
+    background-color: var(--main-bg-color); 
+    color: white;
+    border: 2px solid var(--main-bg-color); 
+  }
+  
+  .button1:hover {
+
+    background-color: white; 
+    color: black; 
+   
+  }
+  
