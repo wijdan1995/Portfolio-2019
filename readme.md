@@ -4,3 +4,4 @@
 * HTML
 * CSS
 * jQuery
+* Font Awesome https://fontawesome.com/

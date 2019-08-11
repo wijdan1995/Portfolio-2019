@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+
 /* Colors vars */
 :root {
     --main-bg-color: #ffa7b6;
@@ -22,6 +23,11 @@ nav{
     background-color: var(--main-bg-color);
     /* font-family: 'Poppins', sans-serif; */
     font-family: 'Amiri', sans-serif;
+
+    /* fixed */
+    /* position: fixed;
+    top: 0;
+    width: 100%; */
 }
 
 .logo{
@@ -128,7 +134,7 @@ padding: 10px;
   background-color: whitesmoke;
 }
 #contact{
-    height: 100vh;
+    height: 94vh;
     background-image: url('./imgs/bg3.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -142,7 +148,7 @@ padding: 10px;
 #contact li{
     list-style: none;
     font-size: 4rem;
-    padding: 0 30px;;
+    padding: 0 30px;
 }
 
 #contact li a{
@@ -158,6 +164,10 @@ padding: 10px;
 .social-links{
     display: flex;
     justify-content: space-between;
+}
+
+.resume{
+    font-size: 2vw;
 }
 
 
@@ -178,6 +188,7 @@ section {
 #page-container {
     position: relative;
     min-height: 100vh;
+    /* padding-top: 8vh; */
 
     /* scroll */
     scroll-snap-type: y mandatory;
@@ -245,7 +256,16 @@ footer a{
     width: 50%;
   }
   #projects{
+    padding: 8vh;
     height: 100%;
+  }
+
+  .social{
+    width: 80vw
+  }
+  #contact li{
+    padding: 0;
+    font-size: 8vw;
   }
 }
 
@@ -256,7 +276,7 @@ footer a{
   }
   #about-me{
     height: 100%;
-    padding: 3%;
+    padding: 10%;
   }
   .skills{
     
