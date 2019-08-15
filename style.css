@@ -48,6 +48,10 @@ nav{
 li{
     list-style: none;
 }
+ .fas{
+    color: #000;
+}
+
 .nav-links a{
     color:var(--main-text-color);
     text-decoration: none;
