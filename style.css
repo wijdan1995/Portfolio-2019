@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+br , p{
+  margin: 5px;
+  padding: 5px;
+}
+
 
 /* Colors vars */
 :root {
