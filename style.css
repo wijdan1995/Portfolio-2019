@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-br , p{
+h3 ,br , p{
   margin: 5px;
   padding: 5px;
 }
@@ -119,7 +119,7 @@ padding-left: 90%;
 
 #about-me{
     height: 100vh;
-    background-image: url('./imgs/bg1.jpg');
+    background-image: url('./imgs/bg1-min.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -131,7 +131,9 @@ display: flex;
 padding: 10px;
 
 }
-
+.skills ul {
+  padding-top: 10px;
+}
 .skills div{
     background-color: #7272721e;
     padding:30px;
@@ -140,12 +142,12 @@ padding: 10px;
 }
 
 #projects{
-    height: 100vh;
+  height: 100%;
   background-color: whitesmoke;
 }
 #contact{
     height: 94vh;
-    background-image: url('./imgs/bg3.jpg');
+    background-image: url('./imgs/bg3-min.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
